@@ -1,19 +1,35 @@
 <!DOCTYPE html>
-<html lang ="ja">
+<html lang="ja">
+
 <head>
-  <meta charset="UTF-8"/
-  <title>Homes</title>
+  <style type="text/css">
+  .turbolinks-progress-bar {
+    position: fixed;
+    display: block;
+    top: 0;
+    left: 0;
+    height: 3px;
+    background: #0076ff;
+    z-index: 9999;
+    transition: width 300ms ease-out, opacity 150ms 150ms ease-in;
+    transform: translate3d(0, 0, 0);
+  }
+  </style>
+  <meta charset="utf-8"/>
 </head>
 
 <body>
-<h1>ようこそBookersへ！</h1>
-<%= form_with model: Book.top do |f| %>
-  <%= f.text_field :title %>
-<% end %>
+<h1>
+  ようこそ
+<strong>Bookers</strong>
+へ！
+</h1>
 
-<p>Bookersでは、さまざまな書籍に関するあなたの意見や</p>
+<p><strong>Bookers</strong>では、さまざまな書籍に関するあなたの意見や</p>
 <p>印象を共有し交換することができます</p>
 
-<a href=""></a>
+<p>
+  <a href="/books">start</a>
+</p>
 </body>
 </html>
